@@ -1,0 +1,140 @@
+a {	
+	color: #5397F0;	
+	text-decoration: none
+}
+body {	
+	border:thick length #5397F0; margin:2em; background-color: #FFFFFF;
+	font-family: Arial;	
+	font-size: 1em;	
+	line-height: 1em;	
+	color: #5397F0;
+	
+	
+	
+	}
+	
+p {font-family: Arial;
+	color: gray;
+	line-height: 1.5em;
+	text-align: justify
+	}
+	
+h1 {font-family: Arial, sans-serif;
+	color: #5397F0;
+	text-align: center
+	}
+	
+h2 {
+	font-size: 1em;
+	color: gray
+	}
+	
+
+h3 {	
+	font-family: Arial, sans-serif;	
+	font-size: 1.2em;
+	line-height: 1.5em;	
+	background-color: #5397F0;  	
+	color: #FFFFFF;
+	text-align:center;
+	}
+h4 {
+	color: #5397F0;
+	text-align: center
+	}
+	
+h5	{font-family: Arial, sans-serif;	
+	font-size: 1em;
+	line-height: 1.5em;	
+	background-color: #5397F0;  	
+	color: #FFFFFF
+	}
+	
+
+table {
+	color: #FFFFFF
+	}
+td, th {	
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	line-height: 2em;
+	color: #333333
+	}
+textarea {
+	font-family: Arial, Helvetica, sans-serif;	
+	font-size: 1em
+	}
+ul {	
+	font-family: Arial, Helvetica, sans-serif;	
+	font-size: 1em;	
+	list-style-type: square;	
+	list-style-position: outside
+	}
+	ol{ counter-reset: item }
+li { display: block }
+li:before { content: counters(item, ".") ". "; counter-increment: item }
+.BulletBackgroundColor {
+	color: #FFFFFF
+	}
+.DataColor {
+	color: #DEDECA
+	}
+.footer { 
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.167em;
+	font-weight: bold;
+	line-height: 1.83em;
+	color: #333333;
+	background-color: #CCCCCC
+	}
+.FormBackgroundColor {
+	color: #CCCCCC
+	}
+.ImageTitleColor {
+	color: #CCCCCC
+	}
+.LabelColor {
+	color: #CCCCCC
+	}
+.ListColorEven {
+	color: #CCCCCC
+	}
+.ListFooterColor {
+	color: #333333
+	}
+.ListHeaderColor {
+	color: #333333
+	}
+.ListColorOdd {
+	color: #DEDECA
+	}
+.ListTitleColor {
+	color: #CCCCCC
+	}
+.NavigationBackgroundColor {
+	color: #666666
+	}
+.NavigationColor {
+	color: #CCCCCC
+	}
+.NewsDataColor {
+	color: #DEDECA
+	}
+.StoryTitle {
+	color: #000000;
+	font-weight: bold
+	}
+.StoryContentColor {
+	color: #000000
+	}
+.TitleColor {
+	color: #000000
+	}
+a:hover {	
+	text-decoration: underline
+	}
+tr.ListHeaderColor th {
+	text-align: left;
+	}.small {
+	font-size: 85%;
+}

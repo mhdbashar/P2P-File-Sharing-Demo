@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Peer to Peer Distribution System</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link rel="stylesheet" type="text/css" href="Peer%20to%20Peer%20Distribution%20System_files/finalYProject.css">
+</head>
+
+<body>
+
+<h1>NimmoPeer: A trusted peer-to-peer file distribution system</h1>
+
+<h4>Matthew Ryder</h4>
+<h4>Winnie McDonagh</h4>
+<h4>Project Supervisor: Dr. Des Chambers</h4>
+
+<h3>Project Overview</h3>
+
+<p> </p>
+<table width="100%" cellspacing="1" cellpadding="2" border="0">
+  <tbody><tr>
+    <td width="266px" valign="top">
+	<table width="99%" cellspacing="1" cellpadding="2" border="0">
+      <tbody><tr>
+        <td height="50"><h2><a href="http://netserver.it.nuigalway.ie/finalYearProject/index.html">Home</a></h2></td>
+      </tr>
+	<tr>
+        <td height="50"><h2><a href="#">Overview</a></h2></td>
+      </tr>
+      <tr>
+        <td height="50"><h2><a href="http://netserver.it.nuigalway.ie/finalYearProject/PDD.pdf">PDD</a></h2></td>
+      </tr>
+	<tr>
+        <td height="50"><h2><a href="http://netserver.it.nuigalway.ie/finalYearProject/NimmoReport.pdf">Report</a></h2></td>
+      </tr>	
+	  <tr>
+        <td height="50"><h2><a href="http://netserver.it.nuigalway.ie/finalYearProject/schedule.html">Schedule</a></h2></td>
+      </tr>
+	  <tr>
+        <td height="50"><h2><a href="http://netserver.it.nuigalway.ie/finalYearProject/links.html">Links</a></h2></td>
+      </tr>
+	  <tr>
+        <td height="50"><h2><a href="http://netserver.it.nuigalway.ie/finalYearProject/contact.html">Contact</a></h2></td>
+      </tr>
+
+    </tbody></table></td>
+    <td valign="top">
+	
+	<h3>Hybrid Peer-to-Peer</h3>
+	<img src="Peer%20to%20Peer%20Distribution%20System_files/hybrid.jpg"><br><br>
+	NimmoPeer uses a hybrid peer-to-peer system architecture. 
+	This is similar to many other peer-to-peer systems like the original Napster, eDonkey, and BitTorrent.
+	The hybrid peer-to-peer architecture allows the network to eliminate the large amount search of traffic that is 
+	typical to decentralised or "pure" peer-to-peer networks like Gnutella. Decentralised networks usually use a flooding 
+	mechanism to distribute queries between the peers, and this uses a lot of peer capacity to simply process and forward
+	queries. In the hybrid peer-to-peer model, search and location queries are only exchanged with the server, reducing
+	the amount of bandwidth required.<br>The role of the server in most hybrid peer-to-peer networks is to allow peers to 
+	locate resources and each other. The actual transfer of data occurs between peers. On our own system, files are downloaded
+	on a piece-by-piece basis. A peer may acquire each piece from any one of many potential providers; this distributes the 
+	load of providing the files across the network.<br><br><br>
+	
+	<h3>Publishing a File</h3>
+	<img src="Peer%20to%20Peer%20Distribution%20System_files/publish.jpg"><br><br>
+	Most public peer-to-peer systems allow any user to make new content available on the network. While most of this content 
+	is desirable, there is nothing to stop users publishing viruses, trojans or any form of malware and mislabelling it. In our 
+	system, only a moderator may publish new content. Any user can submit content to the moderator for approval, and if successful, 
+	they will allow it to be distributed on the network. This scheme allows malware and any other form of undesirable or illegal 
+	content to be kept off the network.<br>
+	When a moderator receives a file for publication from the user, they inspect it to see that it's suitable, and also check that 
+	it's not a duplicate of any file that is circulating already. To publish a file, it is broken into a number of fragments 
+	(up to 256KB each), each of which is digitally signed with the server's private key. These signatures are stored on the central 
+	server where any peer may request them. When a peer receives a fragment, they verify its authenticity using its digital signature 
+	and the server's public key. This mechanism makes the network invulnerable to the "poisoning" attack that affects most public networks.<br><br><br>
+
+	<h3>NimmoPeer GUI</h3>
+	<img src="Peer%20to%20Peer%20Distribution%20System_files/nimmogui.jpg"><br><br>
+	The NimmoPeer user interface, shown above, allows users to search for files and receive them. It also allows users to control 
+	the files they offer to other peers, and monitor the status of incoming files. The message box in the lower half of the window 
+	provides feedback on events occurring, such as connections, disconnections, server shutdowns, the receipt of bad fragments, etc...
+	<br><br><br>
+
+	<br><br>
+	For more information in general on the peer-to-peer world, and our system in particular, check out our project report which is 
+	available as a PDF from the "Report" link above.
+
+    </td>
+  </tr>
+</tbody></table>
+
+
+
+
+
+
+</body></html>
